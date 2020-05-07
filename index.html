@@ -229,15 +229,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>Reed–Solomon error correction由1960年论文(<a href="https://surpass007.github.io/reed1960.pdf" target="_blank" rel="noopener">Reed1960</a>)中发表),Reed-Solomon纠错码应用领域极其广泛,wikipedia介绍如下：</p>
-<blockquote>
-<p>the most prominent of which include consumer technologies such as CDs, DVDs, Blu-ray Discs, QR Codes, data transmission technologies such as DSL and WiMAX, broadcast systems such as satellite communications, DVB and ATSC, and storage systems such as RAID 6</p>
-</blockquote>
-<h2 id="推导"><a href="#推导" class="headerlink" title="推导"></a>推导</h2><p>主要思路为：</p>
+          <h2 id="背景">背景</h2>
+<p>Reed–Solomon error correction由1960年论文(<a href="https://surpass007.github.io/reed1960.pdf" target="_blank" rel="noopener">Reed1960</a>)中发表),Reed-Solomon纠错码应用领域极其广泛,wikipedia介绍如下： &gt;the most prominent of which include consumer technologies such as CDs, DVDs, Blu-ray Discs, QR Codes, data transmission technologies such as DSL and WiMAX, broadcast systems such as satellite communications, DVB and ATSC, and storage systems such as RAID 6</p>
+<h2 id="推导">推导</h2>
+<p>主要思路为：</p>
 <ul>
 <li>m个线性无关的超平面在m维空间相交于一点</li>
-<li>当$x_i$不等于$x_j$时，Vandermonde matrix的行列式不等于0</li>
-<li>$\mathbb{Z_p}$上的 $n$ 次不可约多项式的根 $\alpha$ 可以构成阶为 $p^n$ 的有限域 $\mathbb{F_{p^n}}$ 的生成元</li>
+<li>当<span class="math inline">\(x_i\)</span>不等于<span class="math inline">\(x_j\)</span>时，Vandermonde matrix的行列式不等于0</li>
+<li><span class="math inline">\(\mathbb{Z_p}\)</span>上的 <span class="math inline">\(n\)</span> 次不可约多项式的根 <span class="math inline">\(\alpha\)</span> 可以构成阶为 <span class="math inline">\(p^n\)</span> 的有限域 <span class="math inline">\(\mathbb{F_{p^n}}\)</span> 的生成元</li>
 </ul>
 
       
@@ -318,17 +317,18 @@
 
       
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
       
